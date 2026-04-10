@@ -158,7 +158,7 @@ function EndpointCard({
   onDelete: (id: string) => void;
 }) {
   const [copied, setCopied] = useState(false);
-  const simUrl = `http://localhost:3001/sim/${endpoint.id}`;
+  const simUrl = `https://api.x402test.org/sim/${endpoint.id}`;
 
   const copy = () => {
     navigator.clipboard.writeText(simUrl);
@@ -558,16 +558,6 @@ export default function ServerSimulator() {
             logs.map((log) => <LogEntry key={log.id} log={log} />)
           )}
         </div>
-
-        {/* Quick test hint */}
-        {endpoints.length > 0 && (
-          <div className="card bg-stellar-50 border-stellar-200 text-xs space-y-1">
-            <p className="text-stellar-700 font-semibold">Quick test (no payment):</p>
-            <code className="code-block text-stellar-600 max-h-12">
-              curl http://localhost:3001/sim/{endpoints[0].id}
-            </code>
-          </div>
-        )}
       </div>
     </div>
   );
