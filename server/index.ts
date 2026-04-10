@@ -12,6 +12,7 @@ import type {
 
 const app = express();
 const PORT = 3001;
+const BACKEND_URL = 'https://api.x402test.org';
 
 app.use(cors());
 app.use(express.json({ limit: '1mb' }));
@@ -145,7 +146,7 @@ app.all(/^\/sim\/([^/]+)(\/.*)?$/, async (req, res) => {
     return;
   }
 
-  const resource = `http://localhost:${PORT}/sim/${endpointId}`;
+  const resource = `${BACKEND_URL}/sim/${endpointId}`;
 
   // x402 v2: payment arrives in PAYMENT-SIGNATURE header (base64 JSON PaymentPayload)
   const paymentSigHeader = req.headers['payment-signature'] as string | undefined;
