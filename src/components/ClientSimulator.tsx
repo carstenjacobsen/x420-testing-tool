@@ -28,6 +28,7 @@ import type {
   PaymentRequirements,
   FacilitatorSettleResponse,
 } from '../types';
+import { API_BASE } from '../api';
 
 // freighter-api v4: functions live on the default export
 const {
@@ -113,7 +114,7 @@ async function proxyRequest(
   method: string,
   headers: Record<string, string> = {},
 ): Promise<{ status: number; statusText: string; headers: Record<string, string>; body: string }> {
-  const r = await fetch('/api/proxy', {
+  const r = await fetch(`${API_BASE}/api/proxy`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ url, method, headers }),
