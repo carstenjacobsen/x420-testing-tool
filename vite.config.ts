@@ -7,11 +7,11 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:3001',
+        target: 'http://34.56.64.103:3001',
         changeOrigin: true,
       },
       '/sim': {
-        target: 'http://localhost:3001',
+        target: 'http://34.56.64.103:3001',
         changeOrigin: true,
       },
     },
