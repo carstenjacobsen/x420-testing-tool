@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Server, Globe } from 'lucide-react';
+import { Server, Globe, AlertTriangle } from 'lucide-react';
 import logo from './assets/logo.png';
 import ServerSimulator from './components/ServerSimulator';
 import ClientSimulator from './components/ClientSimulator';
@@ -11,6 +11,15 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {/* Risk banner */}
+      <div className="bg-amber-50 border-b border-amber-200 px-4 py-2 flex items-center justify-center gap-2 text-xs text-amber-800">
+        <AlertTriangle size={13} className="shrink-0 text-amber-500" />
+        <span>
+          This tool is provided for testing purposes only. Use of this service is entirely at your own risk.
+          Do not use real funds or sensitive credentials.
+        </span>
+      </div>
+      
       {/* Header */}
       <header className="border-b border-gray-200 bg-white/80 backdrop-blur sticky top-0 z-10 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
