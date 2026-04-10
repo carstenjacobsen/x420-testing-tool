@@ -436,7 +436,7 @@ export default function ClientSimulator() {
               className="input flex-1"
               value={url}
               onChange={(e) => setUrl(e.target.value)}
-              placeholder="https://api.example.com/premium  or  http://localhost:3001/sim/..."
+              placeholder="E.g. https://api.example.com/premium"
             />
           </div>
 
