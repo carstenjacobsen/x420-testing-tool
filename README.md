@@ -1,4 +1,4 @@
-![x402 Testing Tool](../src/assets/logo.png)
+![x402 Testing Tool](src/assets/logo.png)
 
 # x420 Testing Tool
 
