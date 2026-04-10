@@ -4,16 +4,17 @@ import {
   Server, Activity, AlertCircle, CheckCircle2, Clock, XCircle,
 } from 'lucide-react';
 import type { EndpointConfig, RequestLog, HttpMethod, StellarAsset, StellarNetwork } from '../types';
+import { API_BASE } from '../api';
 
 // ─── API helpers ──────────────────────────────────────────────────────────────
 
 async function apiGet<T>(path: string): Promise<T> {
-  const r = await fetch(path);
+  const r = await fetch(`${API_BASE}${path}`);
   return r.json();
 }
 
 async function apiPost<T>(path: string, body: unknown): Promise<T> {
-  const r = await fetch(path, {
+  const r = await fetch(`${API_BASE}${path}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(body),
@@ -22,7 +23,7 @@ async function apiPost<T>(path: string, body: unknown): Promise<T> {
 }
 
 async function apiDelete(path: string): Promise<void> {
-  await fetch(path, { method: 'DELETE' });
+  await fetch(`${API_BASE}${path}`, { method: 'DELETE' });
 }
 
 // ─── Form defaults ────────────────────────────────────────────────────────────
