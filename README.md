@@ -26,7 +26,9 @@ Let's create an endpoint we can't use for testing the client. This would be a ty
 
 For trying out this tool, just leave the _Success Response_ and _Failure Response_ as is. 
 
-Click **Create Endpoint** to setup the endpoint. The endpoint will be listed under the form. The _Log_ on the right side will track all requests made to the endpoint.
+Click **Create Endpoint** to setup the endpoint. The endpoint will be listed under the form. The endpoint can be called using the URL shown in **Simulated Endpoints** - formatted like this: `https://api.x402test.org/sim/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee`. 
+
+The _Log_ on the right side will track all requests made to the endpoint.
 
 ### Client Simulator
 
