@@ -19,10 +19,16 @@ Let's create an endpoint we can't use for testing the client. This would be a ty
 * **Path**: "premium-content"
 * **Network**: Stellar Testnet
 * **Asset**: USDC
+* **Amount Required**: 0.01
 * **Receiving Address**: Any Stellar address with USDC trustline*
 
 *) Use [Stellar Lab](https://lab.stellar.org) to create an account
 
+For trying out this tool, just leave the _Success Response_ and _Failure Response_ as is. 
+
+Click **Create Endpoint** to setup the endpoint. The endpoint will be listed under the form. The _Log_ on the right side will track all requests made to the endpoint.
+
+### Client Simulator
 
 
 
