@@ -1,10 +1,10 @@
 ![x402 Testing Tool](src/assets/logo.png)
 
-Try the live x402 Testing Tool live here: [x402test.org](x402test.org)
-
 # x402 Testing Tool
 
 This is a tool for testing x402-enabled services. Typically you either develop a service with a x402 paywall, or you develop a client that consumes an API with a x402 paywall. You typically don't develop both, so instead of spending time mocking either the client or the server, you can use the **x402 Testing Tool** and focus on the real task.
+
+Try the live x402 Testing Tool live here: [https://x402test.org](x402test.org)
 
 ## How to use
 This tool can be used to test existing x402-enabled clients and endpoints, but the easiest way to get familiar with the tool is to create an endpoint with the **Server Simulator**, and then test it with the **Client Simulator**. Switch between the Server and Client Simulators with the two buttons in the header.
