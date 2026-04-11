@@ -12,6 +12,9 @@ Fill out the form on the left side of the page, after selecting the Server Simul
 
 The second tab you can add the __Success Response__. If you are simulating a known endpoint and know what a successful response look like, you can paste it in here. The same goes for __Failure Response__, where you can define the response in case the request is not successful.
 
+#### Example
+sadfsdffsdfsdf
+
 
 
 
