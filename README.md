@@ -38,9 +38,17 @@ First, click the **Client Simulator** button in the header. Next, connect your w
 When clicking the **Send Request** button, the client will make the request, the request will get a 402 status code response, build the payment and resubmit the request, and then return the response from the called API endpoint. The responses and payloads for each step will be logged and visible on the left side in realtime.
 
 ## How it's build
+The x402 Testing Tool consists of a backend and a frontend. The backend handles all the requests, storing endpoints and log etc. The frontend handles the x402 requests.
 
+The tech stack consists of:
 
+* React/TypeScript/Vite
+* Express library
+* Stellar SDK
+* x402 Library
+* Tailwind CSS
 
+The backend code is in the `server` folder, and the frontend code is in the `source` folder. 
 
 ## Next step
 Due to time constraints there are a couple og things that didn't go into this project. The things that should be prioritized for future updates are:
