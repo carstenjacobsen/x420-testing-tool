@@ -5,10 +5,10 @@
 This is a tool for testing x402-enabled services. Typically you either develop a service with a x402 paywall, or you develop a client that consumes an API with a x402 paywall. You typically don't develop both, so instead of spending time mocking either the client or the server, you can use the **x402 Testing Tool** and focus on the real task.
 
 ## How to use
-This tool can be used to test existing x402-enabled clients and endpoints, but the easiest way to get familiar with the tool is to create an endpoint with the **Server Simulator**, and then test it with the **Client Simulator**. Switch between the Server and Client Simulators 
+This tool can be used to test existing x402-enabled clients and endpoints, but the easiest way to get familiar with the tool is to create an endpoint with the **Server Simulator**, and then test it with the **Client Simulator**. Switch between the Server and Client Simulators with the two buttons in the header.
 
 ### Server Simulator
-First make sure you are on the Server Simulator page, the 
+Fill out the form on the left side of the page, after selecting the Server Simulater in the header. There are three tabs to pay attention to, the first is __Endpoint & Payment__ that allows you to defind the endpoint, payment currency (XLM or USDC) and amount, among other things. 
 
 
 
