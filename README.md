@@ -60,4 +60,5 @@ Due to time constraints there are a couple og things that didn't go into this pr
 * Extensive testing, this is very much a rough prototype and it has gone through very limited testing
 * Adding sponsored transactions, right now it's using a personal testnet account to pay for transactions
 * Adding support for more wallets
+* Adding support for more "flavors" of x402 workflows (a bit limited at the moment)
 
